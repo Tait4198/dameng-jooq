@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: dm-db
+  datasource:
+    driver-class-name: dm.jdbc.driver.DmDriver
+    url: jdbc:dm://127.0.0.1:5236/DB_TEST?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf-8
+    username: DB_TEST
+    password: db12345678
+
+logging:
+  level:
+    org:
+      jooq: debug
